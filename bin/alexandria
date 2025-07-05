@@ -1,0 +1,64 @@
+#!/usr/bin/env ruby
+# CLI Alexandria
+require_relative "../lib/alexandria"
+
+def usage
+  puts <<~USAGE
+    Alexandria - Biblioteca de Programação Comparada
+    Uso:
+      alexandria list
+      alexandria info <linguagem>
+      alexandria compare <ling1> <ling2>
+      alexandria hello
+      alexandria recomend <paradigma1> [<paradigma2> ...]
+      alexandria matriz
+  USAGE
+end
+
+db = Alexandria.db
+analyzer = Alexandria.analyzer
+
+if ARGV.empty?
+  usage
+  exit 1
+end
+
+cmd, *args = ARGV
+
+case cmd
+when "list"
+  puts db.all_names
+when "info"
+  if args.empty?
+    puts "Informe a linguagem."
+    exit 1
+  end
+  lang = db.find_language(args.first)
+  if lang
+    require 'pp'
+    pp lang.as_hash
+  else
+    puts "Não encontrada."
+  end
+when "compare"
+  if args.size != 2
+    puts "Uso: alexandria compare <ling1> <ling2>"
+    exit 1
+  end
+  require 'pp'
+  pp analyzer.compare(args[0], args[1])
+when "hello"
+  analyzer.hello_worlds.each { |nome, exemplo| puts "#{nome}:\n#{exemplo}\n---" }
+when "recomend"
+  if args.empty?
+    puts "Informe ao menos um paradigma (ex: funcional imperativa)."
+    exit 1
+  end
+  pp analyzer.recomendacao_aprendizado(*args)
+when "matriz"
+  require 'json'
+  puts JSON.pretty_generate(analyzer.matriz_interop)
+else
+  usage
+  exit 1
+end
