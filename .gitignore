@@ -1,0 +1,13 @@
+*.swp
+*.swo
+.bundle
+vendor/
+log/
+tmp/
+.DS_Store
+*.bak
+*.tmp
+.env
+.idea/
+.vscode/
+__pycache__/
