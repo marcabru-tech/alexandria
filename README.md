@@ -20,7 +20,7 @@ Em vez de escolher tecnologias por moda ou buzzwords, Alexandria permite compara
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/alexandria.git
+git clone https://github.com/marcabru-tech/alexandria.git
 cd alexandria
 bundle install # se desejar usar gems extras no futuro
 chmod +x bin/alexandria
