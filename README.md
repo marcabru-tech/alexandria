@@ -16,17 +16,27 @@ Em vez de escolher tecnologias por moda ou buzzwords, Alexandria permite compara
 - **Recomendações inteligentes** por paradigma
 - **Matriz de interoperabilidade** entre linguagens
 - **CLI completa** para análise rápida
+- **Interface web** para uso via navegador
 
 ## Instalação
 
 ```bash
 git clone https://github.com/marcabru-tech/alexandria.git
 cd alexandria
-bundle install # se desejar usar gems extras no futuro
+bundle install
 chmod +x bin/alexandria
 ```
 
 ## Uso
+
+### Interface Web
+
+```bash
+# Rodar interface web
+ruby web/app.rb
+
+# Acessar http://localhost:8080
+```
 
 ### CLI Básica
 
@@ -69,6 +79,7 @@ Alexandria implementa o conceito de **dados observáveis** para linguagens de pr
 - `lib/alexandria.rb`: Interface principal do paradigma ProCP
 - `lib/alexandria/`: Núcleo da biblioteca de análise comparativa
 - `bin/alexandria`: CLI para consultas e análises
+- `web/`: Camada web com interface browser (Sinatra + HTML/JS)
 - `data/linguagens_programacao_comparada.json`: Banco de dados expandido com 37+ linguagens
 
 ### Dados Observáveis

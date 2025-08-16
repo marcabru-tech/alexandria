@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Alexandria Web MVP</title>
+  <style>
+    body { font-family: sans-serif; background: #f8f9fa; margin: 2em; }
+    .container { max-width: 600px; margin: auto; background: #fff; border-radius: 8px; padding: 2em; box-shadow: 0 2px 8px #0001;}
+    h1 { text-align: center; color: #552b8a; }
+    .card { border:1px solid #d1c4e9; padding:1em; margin:1em 0; border-radius:8px;}
+    .btn { background: #6c47b6; color: #fff; border: none; border-radius: 5px; padding: 0.5em 1.2em; margin: 0.5em; cursor: pointer;}
+    input { font-size: 1em; padding: 0.4em; border-radius: 6px; border:1px solid #ccc; margin:0.2em;}
+    pre { background: #eee; padding: 1em; border-radius: 8px;}
+    .footer { text-align: center; color: #777; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Alexandria Web MVP</h1>
+    <div>
+      <button class="btn" onclick="listar()">Listar Linguagens</button>
+      <input id="infoLang" placeholder="Nome da linguagem">
+      <button class="btn" onclick="info()">Info</button>
+    </div>
+    <div>
+      <input id="compare1" placeholder="Linguagem 1">
+      <input id="compare2" placeholder="Linguagem 2">
+      <button class="btn" onclick="compare()">Comparar</button>
+    </div>
+    <pre id="saida"></pre>
+    <div class="footer">
+      <small>
+        Alexandria Web MVP<br>
+        Powered by <a href="https://github.com/marcabru-tech/alexandria" target="_blank">Alexandria</a>
+      </small>
+    </div>
+  </div>
+  <script>
+    async function listar() {
+      let res = await fetch('/api/list');
+      let obj = await res.json();
+      document.getElementById('saida').textContent = obj.languages.join('\n');
+    }
+    async function info() {
+      let lang = document.getElementById('infoLang').value;
+      if (!lang) return alert('Informe o nome da linguagem!');
+      let res = await fetch('/api/info/' + encodeURIComponent(lang));
+      let obj = await res.json();
+      document.getElementById('saida').textContent = JSON.stringify(obj, null, 2);
+    }
+    async function compare() {
+      let l1 = document.getElementById('compare1').value;
+      let l2 = document.getElementById('compare2').value;
+      if (!l1 || !l2) return alert('Informe as duas linguagens!');
+      let res = await fetch('/api/compare/' + encodeURIComponent(l1) + '/' + encodeURIComponent(l2));
+      let obj = await res.json();
+      document.getElementById('saida').textContent = JSON.stringify(obj, null, 2);
+    }
+  </script>
+</body>
+</html>
