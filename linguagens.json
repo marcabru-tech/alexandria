@@ -1,0 +1,1795 @@
+[
+  {
+    "nome": "Haskell",
+    "paradigmas": [
+      "funcional",
+      "declarativo"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".hs",
+    "bibliotecas_principais": [
+      "lens",
+      "aeson",
+      "conduit"
+    ],
+    "ides_principais": [
+      "Visual Studio Code",
+      "IntelliJ IDEA (plugin)",
+      "Emacs",
+      "Vim"
+    ],
+    "curva_de_aprendizagem": "Íngreme para iniciantes devido ao paradigma funcional puro e sintaxe diferente.",
+    "familia_sintatica": "ML/Haskell",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "University of Glasgow",
+    "ano_criacao": 1990,
+    "criador": "Simon Peyton Jones et al.",
+    "proposito": "Pesquisa acadêmica, ensino e aplicações funcionais puras.",
+    "status": "ativa",
+    "exemplo_hello_world": "main = putStrLn \"Hello, World!\"",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Necessária ponte via FFI ou geração de bindings."
+    }
+  },
+  {
+    "nome": "Odin",
+    "paradigmas": [
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".odin",
+    "bibliotecas_principais": [
+      "core",
+      "raylib"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "Sublime Text"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe simples, mas pouca documentação e comunidade pequena.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Manual, com abstrações para alocação customizada",
+    "empresa_desenvolvedora": "Independente (Ginger Bill)",
+    "ano_criacao": 2016,
+    "criador": "Ginger Bill",
+    "proposito": "Substituição moderna ao C, focada em performance e simplicidade.",
+    "status": "ativa",
+    "exemplo_hello_world": "package main\n\nimport \"core:fmt\"\n\nmain :: proc() {\n    fmt.println(\"Hello, World!\")\n}",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Interoperabilidade potencial via C FFI."
+    }
+  },
+  {
+    "nome": "Carbon",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".carbon",
+    "bibliotecas_principais": [
+      "experimental"
+    ],
+    "ides_principais": [
+      "VS Code (experimental)"
+    ],
+    "curva_de_aprendizagem": "Indefinida; linguagem ainda experimental.",
+    "familia_sintatica": "C++-like",
+    "gerenciamento_memoria": "Previsto manual e automático (em construção)",
+    "empresa_desenvolvedora": "Google",
+    "ano_criacao": 2022,
+    "criador": "Chandler Carruth (Google)",
+    "proposito": "Evolução do C++ para aplicações modernas.",
+    "status": "experimental",
+    "exemplo_hello_world": "package Sample api;\n\nfn Main() -> i32 {\n  Println(\"Hello, World!\");\n  return 0;\n}",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Linguagem experimental, interoperabilidade em construção."
+    }
+  },
+  {
+    "nome": "Zig",
+    "paradigmas": [
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".zig",
+    "bibliotecas_principais": [
+      "std",
+      "zigimg"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "CLion"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe clara, mas exige atenção ao gerenciamento de memória.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Manual, controle explícito",
+    "empresa_desenvolvedora": "Independente (Andrew Kelley)",
+    "ano_criacao": 2015,
+    "criador": "Andrew Kelley",
+    "proposito": "Substituição moderna ao C, foco em sistemas e segurança.",
+    "status": "ativa",
+    "exemplo_hello_world": "const std = @import(\"std\");\n\npub fn main() void {\n    std.debug.print(\"Hello, World!\\n\", .{});\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C ABI"
+      ],
+      "observacoes": "Forte interoperabilidade via C ABI."
+    }
+  },
+  {
+    "nome": "Lua",
+    "paradigmas": [
+      "imperativa",
+      "procedural",
+      "orientada a objetos (via metatabelas)",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".lua",
+    "bibliotecas_principais": [
+      "luasocket",
+      "lpeg",
+      "luafilesystem"
+    ],
+    "ides_principais": [
+      "ZeroBrane Studio",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe simples e intuitiva.",
+    "familia_sintatica": "Pascal-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "PUC-Rio",
+    "ano_criacao": 1993,
+    "criador": "Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes",
+    "proposito": "Embarcável em aplicações, scripts de jogos, automação.",
+    "status": "ativa",
+    "exemplo_hello_world": "print('Hello, World!')",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "embedding",
+        "FFI"
+      ],
+      "observacoes": "Facilmente embarcável em outras linguagens."
+    }
+  },
+  {
+    "nome": "Bend",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".bend",
+    "bibliotecas_principais": [
+      "std"
+    ],
+    "ides_principais": [
+      "VS Code (experimental)"
+    ],
+    "curva_de_aprendizagem": "Indefinida; linguagem nova e experimental.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Manual (em desenvolvimento)",
+    "empresa_desenvolvedora": "Independente",
+    "ano_criacao": 2021,
+    "criador": "Benjamin Sutherland",
+    "proposito": "Desenvolvimento de aplicações modernas com foco em performance.",
+    "status": "experimental",
+    "exemplo_hello_world": "// Exemplo hipotético\nmain() {\n    print(\"Hello, World!\")\n}",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Linguagem nova, interoperabilidade limitada."
+    }
+  },
+  {
+    "nome": "C",
+    "paradigmas": [
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".c",
+    "bibliotecas_principais": [
+      "glibc",
+      "OpenSSL",
+      "libcurl"
+    ],
+    "ides_principais": [
+      "Code::Blocks",
+      "CLion",
+      "DevC++",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada a difícil; sintaxe simples, mas exige compreensão de baixo nível e gerenciamento manual de memória.",
+    "familia_sintatica": "Algol/C",
+    "gerenciamento_memoria": "Manual (malloc/free)",
+    "empresa_desenvolvedora": "Bell Labs",
+    "ano_criacao": 1972,
+    "criador": "Dennis Ritchie",
+    "proposito": "Desenvolvimento de sistemas operacionais e software de baixo nível.",
+    "status": "ativa",
+    "exemplo_hello_world": "#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "FFI",
+        "API nativa"
+      ],
+      "observacoes": "Base para interoperabilidade de muitas linguagens."
+    }
+  },
+  {
+    "nome": "C++",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "genérica"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".cpp",
+    "bibliotecas_principais": [
+      "STL",
+      "Boost",
+      "Qt"
+    ],
+    "ides_principais": [
+      "CLion",
+      "Visual Studio",
+      "Qt Creator",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Difícil; linguagem poderosa, porém complexa e multifacetada.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Manual (new/delete) e smart pointers",
+    "empresa_desenvolvedora": "Bell Labs",
+    "ano_criacao": 1983,
+    "criador": "Bjarne Stroustrup",
+    "proposito": "Desenvolvimento de sistemas, aplicações de alto desempenho e jogos.",
+    "status": "ativa",
+    "exemplo_hello_world": "#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "FFI",
+        "API nativa"
+      ],
+      "observacoes": "Interoperabilidade via C ABI e bindings específicos."
+    }
+  },
+  {
+    "nome": "C#",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada (CLR)",
+    "extensao_padrao": ".cs",
+    "bibliotecas_principais": [
+      ".NET",
+      "Entity Framework",
+      "Xamarin"
+    ],
+    "ides_principais": [
+      "Visual Studio",
+      "Rider",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Fácil a moderada; sintaxe amigável, documentação e ferramentas excelentes.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Microsoft",
+    "ano_criacao": 2000,
+    "criador": "Anders Hejlsberg",
+    "proposito": "Desenvolvimento de aplicações desktop, web e mobile no ecossistema .NET.",
+    "status": "ativa",
+    "exemplo_hello_world": "using System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+        "P/Invoke"
+      ],
+      "observacoes": "Interop via P/Invoke e .NET."
+    }
+  },
+  {
+    "nome": "Java",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada (JVM)",
+    "extensao_padrao": ".java",
+    "bibliotecas_principais": [
+      "Spring",
+      "Hibernate",
+      "JUnit"
+    ],
+    "ides_principais": [
+      "IntelliJ IDEA",
+      "Eclipse",
+      "NetBeans",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe clara, mas exige entendimento de orientação a objetos.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Sun Microsystems",
+    "ano_criacao": 1995,
+    "criador": "James Gosling",
+    "proposito": "Aplicações empresariais, web e mobile multiplataforma.",
+    "status": "ativa",
+    "exemplo_hello_world": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+        "JNI"
+      ],
+      "observacoes": "Interop via JNI."
+    }
+  },
+  {
+    "nome": "JavaScript",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".js",
+    "bibliotecas_principais": [
+      "React",
+      "Vue",
+      "Express"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "WebStorm",
+      "Sublime Text"
+    ],
+    "curva_de_aprendizagem": "Fácil para iniciantes, moderada em aplicações avançadas.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Netscape",
+    "ano_criacao": 1995,
+    "criador": "Brendan Eich",
+    "proposito": "Desenvolvimento web (frontend e backend), aplicações interativas.",
+    "status": "ativa",
+    "exemplo_hello_world": "console.log('Hello, World!');",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "WebAssembly",
+        "APIs"
+      ],
+      "observacoes": "Interop via WebAssembly e APIs JS."
+    }
+  },
+  {
+    "nome": "Python",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".py",
+    "bibliotecas_principais": [
+      "numpy",
+      "pandas",
+      "requests"
+    ],
+    "ides_principais": [
+      "PyCharm",
+      "VS Code",
+      "Jupyter",
+      "Spyder"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe intuitiva e amigável.",
+    "familia_sintatica": "Pythonic (própria, inspirada em ABC/C)",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Python Software Foundation",
+    "ano_criacao": 1991,
+    "criador": "Guido van Rossum",
+    "proposito": "Desenvolvimento geral, ciência de dados, automação, web.",
+    "status": "ativa",
+    "exemplo_hello_world": "print('Hello, World!')",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C API",
+        "ctypes",
+        "CFFI"
+      ],
+      "observacoes": "Interop fácil via bindings em C."
+    }
+  },
+  {
+    "nome": "Pascal",
+    "paradigmas": [
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".pas",
+    "bibliotecas_principais": [
+      "RTL",
+      "FreeVision"
+    ],
+    "ides_principais": [
+      "Lazarus",
+      "Delphi"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe estruturada e didática.",
+    "familia_sintatica": "Algol/Pascal",
+    "gerenciamento_memoria": "Manual (new/dispose), algumas versões com gerenciamento automático",
+    "empresa_desenvolvedora": "ETH Zurich",
+    "ano_criacao": 1970,
+    "criador": "Niklaus Wirth",
+    "proposito": "Ensino, aplicações administrativas, desenvolvimento rápido.",
+    "status": "ativa",
+    "exemplo_hello_world": "program HelloWorld;\nbegin\n  writeln('Hello, World!');\nend.",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Interop limitada, possível via C intermediário."
+    }
+  },
+  {
+    "nome": "COBOL",
+    "paradigmas": [
+      "procedural"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".cob",
+    "bibliotecas_principais": [
+      "OpenCOBOL",
+      "GnuCOBOL"
+    ],
+    "ides_principais": [
+      "Visual COBOL",
+      "OpenCobolIDE"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe descritiva e extensa.",
+    "familia_sintatica": "COBOL",
+    "gerenciamento_memoria": "Automático na maioria das implementações",
+    "empresa_desenvolvedora": "CODASYL/IBM",
+    "ano_criacao": 1959,
+    "criador": "Grace Hopper et al.",
+    "proposito": "Automação comercial, bancos, governo.",
+    "status": "ativa",
+    "exemplo_hello_world": "IDENTIFICATION DIVISION.\nPROGRAM-ID. HelloWorld.\nPROCEDURE DIVISION.\n    DISPLAY 'Hello, World!'.\n    STOP RUN.",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Pouca interoperabilidade direta; possível via arquivos e C."
+    }
+  },
+  {
+    "nome": "Rust",
+    "paradigmas": [
+      "imperativa",
+      "funcional",
+      "concorrente"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".rs",
+    "bibliotecas_principais": [
+      "tokio",
+      "serde",
+      "actix"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "IntelliJ Rust",
+      "CLion"
+    ],
+    "curva_de_aprendizagem": "Íngreme; conceitos avançados de ownership e borrowing.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Gerenciamento de memória seguro e sem coletor de lixo (ownership/borrowing)",
+    "empresa_desenvolvedora": "Mozilla",
+    "ano_criacao": 2010,
+    "criador": "Graydon Hoare",
+    "proposito": "Desenvolvimento de sistemas seguros e de alta performance.",
+    "status": "ativa",
+    "exemplo_hello_world": "fn main() {\n    println!(\"Hello, World!\");\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C ABI",
+        "FFI"
+      ],
+      "observacoes": "Interop robusta via FFI."
+    }
+  },
+  {
+    "nome": "Ruby",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".rb",
+    "bibliotecas_principais": [
+      "rails",
+      "sinatra"
+    ],
+    "ides_principais": [
+      "RubyMine",
+      "VS Code",
+      "Aptana Studio"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe expressiva e próxima da linguagem humana.",
+    "familia_sintatica": "Perl-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Independente (Yukihiro Matsumoto)",
+    "ano_criacao": 1995,
+    "criador": "Yukihiro Matsumoto",
+    "proposito": "Desenvolvimento web, scripts e automação.",
+    "status": "ativa",
+    "exemplo_hello_world": "puts 'Hello, World!'",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+        "C extension"
+      ],
+      "observacoes": "Interop via extensões em C."
+    }
+  },
+  {
+    "nome": "Go",
+    "paradigmas": [
+      "imperativa",
+      "concorrente"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".go",
+    "bibliotecas_principais": [
+      "gin",
+      "beego",
+      "grpc"
+    ],
+    "ides_principais": [
+      "GoLand",
+      "VS Code",
+      "LiteIDE"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe limpa e ferramentas integradas.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Google",
+    "ano_criacao": 2009,
+    "criador": "Robert Griesemer, Rob Pike, Ken Thompson",
+    "proposito": "Sistemas, servidores, microsserviços, cloud.",
+    "status": "ativa",
+    "exemplo_hello_world": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Cgo",
+        "FFI"
+      ],
+      "observacoes": "Interop robusta via Cgo."
+    }
+  },
+  {
+    "nome": "Perl",
+    "paradigmas": [
+      "imperativa",
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".pl",
+    "bibliotecas_principais": [
+      "Moose",
+      "DBI",
+      "Mojolicious"
+    ],
+    "ides_principais": [
+      "Padre",
+      "Komodo IDE",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe flexível mas pode ser confusa para iniciantes.",
+    "familia_sintatica": "Perl",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Independente (Larry Wall)",
+    "ano_criacao": 1987,
+    "criador": "Larry Wall",
+    "proposito": "Processamento de texto, automação de scripts, web.",
+    "status": "ativa",
+    "exemplo_hello_world": "print \"Hello, World!\\n\";",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+        "XS",
+        "Inline::C"
+      ],
+      "observacoes": "Interop via módulos C e bindings, integração possível com arquivos e chamadas externas."
+    }
+  },
+  {
+    "nome": "Fortran",
+    "paradigmas": [
+      "imperativa",
+      "procedural",
+      "orientada a objetos (modernas)"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".f90",
+    "bibliotecas_principais": [
+      "LAPACK",
+      "BLAS"
+    ],
+    "ides_principais": [
+      "Photran",
+      "VS Code",
+      "Intel Fortran"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe antiga, mas lógica simples.",
+    "familia_sintatica": "Fortran",
+    "gerenciamento_memoria": "Manual",
+    "empresa_desenvolvedora": "IBM",
+    "ano_criacao": 1957,
+    "criador": "John Backus",
+    "proposito": "Cálculo científico e engenharia numérica.",
+    "status": "ativa",
+    "exemplo_hello_world": "program hello\n  print *, 'Hello, World!'\nend program hello",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Interop possível via C intermediário."
+    }
+  },
+  {
+    "nome": "Common Lisp",
+    "paradigmas": [
+      "funcional",
+      "imperativa",
+      "orientada a objetos"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada/compilada",
+    "extensao_padrao": ".lisp",
+    "bibliotecas_principais": [
+      "Quicklisp",
+      "SBCL",
+      "CLX"
+    ],
+    "ides_principais": [
+      "SLIME (Emacs)",
+      "LispWorks",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Íngreme; sintaxe distinta (prefix, S-expressions).",
+    "familia_sintatica": "Lisp",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "MIT",
+    "ano_criacao": 1958,
+    "criador": "John McCarthy",
+    "proposito": "Pesquisa em IA, ensino, prototipagem rápida.",
+    "status": "ativa",
+    "exemplo_hello_world": "(print \"Hello, World!\")",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Interop via C possível, mas rara."
+    }
+  },
+  {
+    "nome": "Assembly x86",
+    "paradigmas": [
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "não tipada",
+    "compilada_ou_interpretada": "montada",
+    "extensao_padrao": ".asm",
+    "bibliotecas_principais": [
+      "NASM",
+      "MASM"
+    ],
+    "ides_principais": [
+      "NASM IDE",
+      "Masm32",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Muito íngreme; exige conhecimento profundo de hardware.",
+    "familia_sintatica": "Assembly",
+    "gerenciamento_memoria": "Manual",
+    "empresa_desenvolvedora": "Diversos fabricantes de CPU",
+    "ano_criacao": 1949,
+    "criador": "Kathleen Booth (primeiro assembler)",
+    "proposito": "Programação de baixo nível, drivers, sistemas embarcados.",
+    "status": "ativa",
+    "exemplo_hello_world": "; Hello World em NASM x86 (Linux)\nsection .data\n    msg db 'Hello, World!',0Ah\nsection .text\nglobal _start\n_start:\n    mov edx,13\n    mov ecx,msg\n    mov ebx,1\n    mov eax,4\n    int 0x80\n    mov eax,1\n    int 0x80",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Interop via ligação direta binária (pouco prático)."
+    }
+  },
+  {
+    "nome": "F#",
+    "paradigmas": [
+      "funcional",
+      "imperativa",
+      "orientada a objetos"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada (CLR/.NET)",
+    "extensao_padrao": ".fs",
+    "bibliotecas_principais": [
+      "FSharp.Core",
+      "Math.NET Numerics",
+      "Suave"
+    ],
+    "ides_principais": [
+      "Visual Studio",
+      "Rider",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe funcional moderna e integração com .NET.",
+    "familia_sintatica": "ML/Caml",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Microsoft Research",
+    "ano_criacao": 2005,
+    "criador": "Don Syme",
+    "proposito": "Desenvolvimento funcional em .NET, processamento de dados, ciência e aplicações financeiras.",
+    "status": "ativa",
+    "exemplo_hello_world": "printfn \"Hello, World!\"",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+        ".NET interop"
+      ],
+      "observacoes": "Interop possível via .NET, FFI com C também disponível."
+    }
+  },
+  {
+    "nome": "Seed7",
+    "paradigmas": [
+      "extensível",
+      "multiparadigma"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".s7i",
+    "bibliotecas_principais": [
+      "Seed7 Standard Library"
+    ],
+    "ides_principais": [
+      "Seed7 IDE",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Sintaxe e semântica editável",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "Thomas Mertes",
+    "ano_criacao": 2005,
+    "criador": "Thomas Mertes",
+    "proposito": "Linguagem definida por usuário, DSLs",
+    "status": "ativa",
+    "exemplo_hello_world": "$ include \"seed7_05.s7i\";\nconst proc: main is func\nbegin\n  writeln(\"Hello, world!\");\nend func;",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Niecza",
+    "paradigmas": [
+      "funcional",
+      "multi-paradigma"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".p6",
+    "bibliotecas_principais": [
+      "Rakudo ecosystem"
+    ],
+    "ides_principais": [
+      "CommaIDE",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Gramáticas regras",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "Perl 6 Community",
+    "ano_criacao": 2011,
+    "criador": "Stefan O'Rear",
+    "proposito": "Implementação Perl 6 em .NET",
+    "status": "ativa",
+    "exemplo_hello_world": "say 'Hello, world!';",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Pony",
+    "paradigmas": [
+      "actor",
+      "capabilidades",
+      "segurança"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".pony",
+    "bibliotecas_principais": [
+      "Pony Standard Library"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "Pony Language Server"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Reference capabilities",
+    "gerenciamento_memoria": "Garbage-free reference counting",
+    "empresa_desenvolvedora": "Pony Team",
+    "ano_criacao": 2015,
+    "criador": "Sylvan Clebsch",
+    "proposito": "Alta concorrência, zero race-conditions",
+    "status": "ativa",
+    "exemplo_hello_world": "actor Main\n  new create(env: Env) =>\n    env.out.print(\"Hello, world!\")",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Idris",
+    "paradigmas": [
+      "funcional dependente",
+      "proof assistant"
+    ],
+    "tipagem": "dependente",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".idr",
+    "bibliotecas_principais": [
+      "Idris2 contrib",
+      "Prelude"
+    ],
+    "ides_principais": [
+      "Idris2 LSP",
+      "Emacs idris-mode"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Tipos dependentes",
+    "gerenciamento_memoria": "Automático funcional",
+    "empresa_desenvolvedora": "University of St Andrews",
+    "ano_criacao": 2013,
+    "criador": "Edwin Brady",
+    "proposito": "Provas formais, programas corretos",
+    "status": "ativa",
+    "exemplo_hello_world": "module Main\nmain : IO ()\nmain = putStrLn \"Hello, world!\"",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Agda",
+    "paradigmas": [
+      "funcional dependente",
+      "proof assistant"
+    ],
+    "tipagem": "dependente",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".agda",
+    "bibliotecas_principais": [
+      "Agda Standard Library"
+    ],
+    "ides_principais": [
+      "Emacs agda-mode",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Tipos universos",
+    "gerenciamento_memoria": "Automático funcional",
+    "empresa_desenvolvedora": "Chalmers University",
+    "ano_criacao": 2007,
+    "criador": "Ulf Norell",
+    "proposito": "Provas formais, verificação de software",
+    "status": "ativa",
+    "exemplo_hello_world": "module Hello where\nopen import IO\nmain = run (putStrLn \"Hello, world!\")",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Coq",
+    "paradigmas": [
+      "proof assistant",
+      "funcional"
+    ],
+    "tipagem": "dependente",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".v",
+    "bibliotecas_principais": [
+      "Coq Standard Library",
+      "MathComp"
+    ],
+    "ides_principais": [
+      "CoqIDE",
+      "VS Code Coq LSP"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Gallina",
+    "gerenciamento_memoria": "Automático funcional",
+    "empresa_desenvolvedora": "INRIA",
+    "ano_criacao": 1989,
+    "criador": "INRIA",
+    "proposito": "Provas formais, extração de programas",
+    "status": "histórica",
+    "exemplo_hello_world": "Require Import Coq.Strings.String.\nDefinition main : string := \"Hello, world!\".",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Lean",
+    "paradigmas": [
+      "proof assistant",
+      "funcional"
+    ],
+    "tipagem": "dependente",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".lean",
+    "bibliotecas_principais": [
+      "Mathlib4"
+    ],
+    "ides_principais": [
+      "VS Code Lean4",
+      "Emacs lean-mode"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Dependent types",
+    "gerenciamento_memoria": "Automático funcional",
+    "empresa_desenvolvedora": "Microsoft Research",
+    "ano_criacao": 2013,
+    "criador": "Leonardo de Moura",
+    "proposito": "Matemática formalizada",
+    "status": "ativa",
+    "exemplo_hello_world": "def main : IO Unit := IO.println \"Hello, world!\"",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "ATS",
+    "paradigmas": [
+      "sistema",
+      "proof-carrying code"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".dats",
+    "bibliotecas_principais": [
+      "ATS2 prelude"
+    ],
+    "ides_principais": [
+      "VS Code ATS2"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Tipos refinados",
+    "gerenciamento_memoria": "Manual com verificação de tipos",
+    "empresa_desenvolvedora": "Boston University",
+    "ano_criacao": 2006,
+    "criador": "Hongwei Xi",
+    "proposito": "Programas seguros em C/C++",
+    "status": "ativa",
+    "exemplo_hello_world": "implement main0 () = print (\"Hello, world!\\n\")",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Chapel",
+    "paradigmas": [
+      "paralela",
+      "multiresolution"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".chpl",
+    "bibliotecas_principais": [
+      "Chapel Standard Library"
+    ],
+    "ides_principais": [
+      "Chapel IDE",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Locales",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "Cray Inc.",
+    "ano_criacao": 2009,
+    "criador": "Brad Chamberlain et al.",
+    "proposito": "HPC, supercomputação",
+    "status": "ativa",
+    "exemplo_hello_world": "writeln(\"Hello, world!\");",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "CUDA C",
+    "paradigmas": [
+      "paralela gpu",
+      "kernel-based"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".cu",
+    "bibliotecas_principais": [
+      "cuBLAS",
+      "cuDNN",
+      "Thrust"
+    ],
+    "ides_principais": [
+      "Nsight",
+      "CLion",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "<<< >>> grid/block",
+    "gerenciamento_memoria": "Manual",
+    "empresa_desenvolvedora": "NVIDIA",
+    "ano_criacao": 2007,
+    "criador": "NVIDIA",
+    "proposito": "GPGPU, deep learning",
+    "status": "ativa",
+    "exemplo_hello_world": "__global__ void hello() { printf(\"Hello, world!\\n\"); }",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "B (linguagem)",
+    "paradigmas": [
+      "procedural",
+      "typeless"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".b",
+    "bibliotecas_principais": [
+      "Standard I/O",
+      "Runtime BCPL"
+    ],
+    "ides_principais": [
+      "ed",
+      "qed",
+      "PDP-7 ASM"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Palavras de máquina únicas",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "Bell Labs",
+    "ano_criacao": 1969,
+    "criador": "Ken Thompson, Dennis Ritchie",
+    "proposito": "Sistemas UNIX, pré-C",
+    "status": "histórica",
+    "exemplo_hello_world": "main() { extrn a, b, c; putchar(a); putchar(b); putchar(c); putchar('*n'); } a 'hel'; b 'lo, '; c 'world';",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "BCPL",
+    "paradigmas": [
+      "procedural",
+      "typeless"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".bcpl",
+    "bibliotecas_principais": [
+      "libhdr",
+      "Standard Library"
+    ],
+    "ides_principais": [
+      "CLI BCPL",
+      "Retro PDP-11"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "LET-in",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "University of Cambridge",
+    "ano_criacao": 1967,
+    "criador": "Martin Richards",
+    "proposito": "Compiladores, sistemas",
+    "status": "histórica",
+    "exemplo_hello_world": "GET 'libhdr'\nLET start() = writef(\"Hello, world!*n\")",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "ALGOL 60",
+    "paradigmas": [
+      "procedural",
+      "blocos estruturados"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".alg",
+    "bibliotecas_principais": [
+      "ALGOL Standard I/O"
+    ],
+    "ides_principais": [
+      "Paper tape",
+      "Burroughs B5000"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "BEGIN/END blocos",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "IFIP WG 2.1",
+    "ano_criacao": 1960,
+    "criador": "Comitê ALGOL",
+    "proposito": "Algoritmos científicos",
+    "status": "histórica",
+    "exemplo_hello_world": "BEGIN\n  OUTSTRING(1, 'Hello, world!');\nEND",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "APL",
+    "paradigmas": [
+      "array",
+      "funcional"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".apl",
+    "bibliotecas_principais": [
+      "APL Standard Library"
+    ],
+    "ides_principais": [
+      "Dyalog APL",
+      "APLX",
+      "TryAPL"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Símbolos especiais",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "IBM",
+    "ano_criacao": 1966,
+    "criador": "Kenneth E. Iverson",
+    "proposito": "Análise de dados, finanças",
+    "status": "histórica",
+    "exemplo_hello_world": "'Hello, world!'",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Eiffel",
+    "paradigmas": [
+      "orientada a objetos",
+      "design by contract"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".e",
+    "bibliotecas_principais": [
+      "EiffelBase",
+      "EiffelVision"
+    ],
+    "ides_principais": [
+      "EiffelStudio",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Variável dependendo da experiência prévia e complexidade da linguagem.",
+    "familia_sintatica": "Classes invariantes",
+    "gerenciamento_memoria": "Automático com garbage collection",
+    "empresa_desenvolvedora": "Eiffel Software",
+    "ano_criacao": 1986,
+    "criador": "Bertrand Meyer",
+    "proposito": "Software robusto, engenharia de contratos",
+    "status": "histórica",
+    "exemplo_hello_world": "class HELLO create make feature make do io.put_string(\"Hello, world!\") end end",
+    "interop_gurudev": {
+      "possui_bridge": false,
+      "modos_interop": [
+
+      ],
+      "observacoes": "Informações de interoperabilidade a serem determinadas."
+    }
+  },
+  {
+    "nome": "Kotlin",
+    "paradigmas": [
+      "orientada a objetos",
+      "funcional",
+      "imperativa"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada (JVM)",
+    "extensao_padrao": ".kt",
+    "bibliotecas_principais": [
+      "kotlinx.coroutines",
+      "Ktor",
+      "Exposed"
+    ],
+    "ides_principais": [
+      "IntelliJ IDEA",
+      "Android Studio",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada; familiar para desenvolvedores Java.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático (JVM)",
+    "empresa_desenvolvedora": "JetBrains",
+    "ano_criacao": 2011,
+    "criador": "JetBrains Team",
+    "proposito": "Desenvolvimento Android e aplicações multiplataforma.",
+    "status": "ativa",
+    "exemplo_hello_world": "fun main() {\n    println(\"Hello, World!\")\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Java interop",
+        "JNI"
+      ],
+      "observacoes": "Interoperabilidade nativa com Java."
+    }
+  },
+  {
+    "nome": "Swift",
+    "paradigmas": [
+      "orientada a objetos",
+      "funcional",
+      "imperativa"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".swift",
+    "bibliotecas_principais": [
+      "Foundation",
+      "UIKit",
+      "SwiftUI"
+    ],
+    "ides_principais": [
+      "Xcode",
+      "VS Code",
+      "AppCode"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe moderna e segura.",
+    "familia_sintatica": "C-like moderna",
+    "gerenciamento_memoria": "ARC (Automatic Reference Counting)",
+    "empresa_desenvolvedora": "Apple",
+    "ano_criacao": 2014,
+    "criador": "Chris Lattner",
+    "proposito": "Desenvolvimento iOS, macOS e aplicações Apple.",
+    "status": "ativa",
+    "exemplo_hello_world": "print(\"Hello, World!\")",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Objective-C bridge",
+        "C interop"
+      ],
+      "observacoes": "Interoperabilidade nativa com Objective-C e C."
+    }
+  },
+  {
+    "nome": "Dart",
+    "paradigmas": [
+      "orientada a objetos",
+      "imperativa"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada/interpretada",
+    "extensao_padrao": ".dart",
+    "bibliotecas_principais": [
+      "Flutter",
+      "http",
+      "path"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "IntelliJ IDEA",
+      "Android Studio"
+    ],
+    "curva_de_aprendizagem": "Fácil; sintaxe familiar para desenvolvedores Java/JavaScript.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Google",
+    "ano_criacao": 2011,
+    "criador": "Lars Bak e Kasper Lund",
+    "proposito": "Desenvolvimento web e mobile com Flutter.",
+    "status": "ativa",
+    "exemplo_hello_world": "void main() {\n  print('Hello, World!');\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "FFI",
+        "Platform channels"
+      ],
+      "observacoes": "Interoperabilidade via FFI e channels específicos de plataforma."
+    }
+  },
+  {
+    "nome": "TypeScript",
+    "paradigmas": [
+      "orientada a objetos",
+      "funcional",
+      "imperativa"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "transpilada",
+    "extensao_padrao": ".ts",
+    "bibliotecas_principais": [
+      "React",
+      "Angular",
+      "Express"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "WebStorm",
+      "Atom"
+    ],
+    "curva_de_aprendizagem": "Fácil para desenvolvedores JavaScript.",
+    "familia_sintatica": "JavaScript/C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático (V8)",
+    "empresa_desenvolvedora": "Microsoft",
+    "ano_criacao": 2012,
+    "criador": "Anders Hejlsberg",
+    "proposito": "Desenvolvimento web com tipagem estática.",
+    "status": "ativa",
+    "exemplo_hello_world": "console.log(\"Hello, World!\");",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "observacoes": "Transpila para JavaScript, interoperabilidade completa."
+    }
+  },
+  {
+    "nome": "Scala",
+    "paradigmas": [
+      "orientada a objetos",
+      "funcional"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada (JVM)",
+    "extensao_padrao": ".scala",
+    "bibliotecas_principais": [
+      "Akka",
+      "Play Framework",
+      "Cats"
+    ],
+    "ides_principais": [
+      "IntelliJ IDEA",
+      "VS Code",
+      "Eclipse"
+    ],
+    "curva_de_aprendizagem": "Íngreme; combina paradigmas OO e funcional.",
+    "familia_sintatica": "ML/Java hybrid",
+    "gerenciamento_memoria": "Coletor de lixo automático (JVM)",
+    "empresa_desenvolvedora": "EPFL",
+    "ano_criacao": 2003,
+    "criador": "Martin Odersky",
+    "proposito": "Aplicações escaláveis e big data.",
+    "status": "ativa",
+    "exemplo_hello_world": "object Hello {\n  def main(args: Array[String]): Unit = {\n    println(\"Hello, World!\")\n  }\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Java interop",
+        "JNI"
+      ],
+      "observacoes": "Interoperabilidade completa com Java."
+    }
+  },
+  {
+    "nome": "PHP",
+    "paradigmas": [
+      "orientada a objetos",
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".php",
+    "bibliotecas_principais": [
+      "Laravel",
+      "Symfony",
+      "Composer"
+    ],
+    "ides_principais": [
+      "PhpStorm",
+      "VS Code",
+      "Sublime Text"
+    ],
+    "curva_de_aprendizagem": "Fácil; ideal para desenvolvimento web.",
+    "familia_sintatica": "C-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "The PHP Group",
+    "ano_criacao": 1995,
+    "criador": "Rasmus Lerdorf",
+    "proposito": "Desenvolvimento web server-side.",
+    "status": "ativa",
+    "exemplo_hello_world": "<?php\necho \"Hello, World!\";\n?>",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C extensions",
+        "FFI"
+      ],
+      "observacoes": "Extensões C nativas e FFI moderno."
+    }
+  },
+  {
+    "nome": "R",
+    "paradigmas": [
+      "funcional",
+      "orientada a objetos",
+      "procedural"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".R",
+    "bibliotecas_principais": [
+      "ggplot2",
+      "dplyr",
+      "shiny"
+    ],
+    "ides_principais": [
+      "RStudio",
+      "VS Code",
+      "Emacs"
+    ],
+    "curva_de_aprendizagem": "Moderada; ideal para estatística e análise de dados.",
+    "familia_sintatica": "S-language",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "R Core Team",
+    "ano_criacao": 1993,
+    "criador": "Ross Ihaka e Robert Gentleman",
+    "proposito": "Computação estatística e análise de dados.",
+    "status": "ativa",
+    "exemplo_hello_world": "print(\"Hello, World!\")",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C/C++",
+        "Python (reticulate)"
+      ],
+      "observacoes": "Extensões C/C++ nativas e bridges para Python."
+    }
+  },
+  {
+    "nome": "MATLAB",
+    "paradigmas": [
+      "orientada a objetos",
+      "imperativa",
+      "procedural"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "interpretada",
+    "extensao_padrao": ".m",
+    "bibliotecas_principais": [
+      "Signal Processing Toolbox",
+      "Statistics Toolbox",
+      "Image Processing"
+    ],
+    "ides_principais": [
+      "MATLAB IDE",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Moderada; voltada para engenharia e ciências.",
+    "familia_sintatica": "Matemática/Matricial",
+    "gerenciamento_memoria": "Automático",
+    "empresa_desenvolvedora": "MathWorks",
+    "ano_criacao": 1984,
+    "criador": "Cleve Moler",
+    "proposito": "Computação numérica e simulação.",
+    "status": "ativa",
+    "exemplo_hello_world": "disp('Hello, World!')",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "MEX (C/C++)",
+        "Python",
+        "Java"
+      ],
+      "observacoes": "MEX files para C/C++, engines para Python e Java."
+    }
+  },
+  {
+    "nome": "Objective-C",
+    "paradigmas": [
+      "orientada a objetos",
+      "imperativa"
+    ],
+    "tipagem": "estática",
+    "compilada_ou_interpretada": "compilada",
+    "extensao_padrao": ".m",
+    "bibliotecas_principais": [
+      "Foundation",
+      "UIKit",
+      "Cocoa"
+    ],
+    "ides_principais": [
+      "Xcode",
+      "AppCode"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe única com colchetes.",
+    "familia_sintatica": "Smalltalk/C hybrid",
+    "gerenciamento_memoria": "ARC/Manual",
+    "empresa_desenvolvedora": "NeXT/Apple",
+    "ano_criacao": 1984,
+    "criador": "Brad Cox e Tom Love",
+    "proposito": "Desenvolvimento macOS e iOS (legado).",
+    "status": "ativa",
+    "exemplo_hello_world": "#import <Foundation/Foundation.h>\n\nint main() {\n    NSLog(@\"Hello, World!\");\n    return 0;\n}",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C interop",
+        "Swift bridge"
+      ],
+      "observacoes": "Interoperabilidade nativa com C e Swift."
+    }
+  },
+  {
+    "nome": "Clojure",
+    "paradigmas": [
+      "funcional",
+      "orientada a objetos",
+      "concorrência"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "compilada (JVM)",
+    "extensao_padrao": ".clj",
+    "bibliotecas_principais": [
+      "Ring",
+      "Compojure",
+      "core.async"
+    ],
+    "ides_principais": [
+      "Emacs (CIDER)",
+      "IntelliJ (Cursive)",
+      "VS Code"
+    ],
+    "curva_de_aprendizagem": "Íngreme; sintaxe LISP e paradigma funcional.",
+    "familia_sintatica": "LISP",
+    "gerenciamento_memoria": "Coletor de lixo automático (JVM)",
+    "empresa_desenvolvedora": "Rich Hickey",
+    "ano_criacao": 2007,
+    "criador": "Rich Hickey",
+    "proposito": "Programação funcional na JVM.",
+    "status": "ativa",
+    "exemplo_hello_world": "(println \"Hello, World!\")",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Java interop",
+        "JNI"
+      ],
+      "observacoes": "Acesso direto a classes e bibliotecas Java."
+    }
+  },
+  {
+    "nome": "Erlang",
+    "paradigmas": [
+      "funcional",
+      "concorrência",
+      "ator"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "compilada (BEAM)",
+    "extensao_padrao": ".erl",
+    "bibliotecas_principais": [
+      "OTP",
+      "mnesia",
+      "cowboy"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "Emacs",
+      "IntelliJ IDEA"
+    ],
+    "curva_de_aprendizagem": "Íngreme; modelo de atores e sintaxe única.",
+    "familia_sintatica": "Prolog-like",
+    "gerenciamento_memoria": "Per-process garbage collection",
+    "empresa_desenvolvedora": "Ericsson",
+    "ano_criacao": 1986,
+    "criador": "Joe Armstrong, Robert Virding, Mike Williams",
+    "proposito": "Sistemas distribuídos e telecomunicações.",
+    "status": "ativa",
+    "exemplo_hello_world": "-module(hello).\n-export([hello_world/0]).\n\nhello_world() ->\n    io:fwrite(\"Hello, World!~n\").",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Port drivers",
+        "NIFs"
+      ],
+      "observacoes": "Integração via port drivers e Native Implemented Functions."
+    }
+  },
+  {
+    "nome": "Elixir",
+    "paradigmas": [
+      "funcional",
+      "concorrência",
+      "ator"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "compilada (BEAM)",
+    "extensao_padrao": ".ex",
+    "bibliotecas_principais": [
+      "Phoenix",
+      "GenServer",
+      "Ecto"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "IntelliJ IDEA",
+      "Emacs"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe Ruby-like sobre Erlang VM.",
+    "familia_sintatica": "Ruby-like",
+    "gerenciamento_memoria": "Per-process garbage collection",
+    "empresa_desenvolvedora": "José Valim",
+    "ano_criacao": 2011,
+    "criador": "José Valim",
+    "proposito": "Sistemas distribuídos e web apps concorrentes.",
+    "status": "ativa",
+    "exemplo_hello_world": "IO.puts \"Hello, World!\"",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "Erlang interop",
+        "NIFs"
+      ],
+      "observacoes": "Interoperabilidade completa com Erlang e NIFs."
+    }
+  },
+  {
+    "nome": "Julia",
+    "paradigmas": [
+      "orientada a objetos",
+      "funcional",
+      "imperativa"
+    ],
+    "tipagem": "dinâmica",
+    "compilada_ou_interpretada": "JIT compilada",
+    "extensao_padrao": ".jl",
+    "bibliotecas_principais": [
+      "Plots.jl",
+      "DataFrames.jl",
+      "Flux.jl"
+    ],
+    "ides_principais": [
+      "VS Code",
+      "Juno",
+      "Jupyter"
+    ],
+    "curva_de_aprendizagem": "Moderada; sintaxe familiar com alta performance.",
+    "familia_sintatica": "MATLAB/Python-like",
+    "gerenciamento_memoria": "Coletor de lixo automático",
+    "empresa_desenvolvedora": "Julia Computing",
+    "ano_criacao": 2012,
+    "criador": "Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman",
+    "proposito": "Computação científica de alta performance.",
+    "status": "ativa",
+    "exemplo_hello_world": "println(\"Hello, World!\")",
+    "interop_gurudev": {
+      "possui_bridge": true,
+      "modos_interop": [
+        "C/C++",
+        "Python",
+        "R"
+      ],
+      "observacoes": "Chamadas diretas para C/C++ e bridges para Python/R."
+    }
+  }
+]
